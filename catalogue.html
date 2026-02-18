@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YankeeBaku - Discover American-Style Spots in Baku</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Mobile nav -->
+  <nav class="nav nav-mobile">
+    <div class="nav-row">
+      <button class="btn-icon back" id="backMobile" aria-label="Back">←</button>
+      <h1 class="brand">YankeeBaku</h1>
+      <div class="spacer"></div>
+    </div>
+    <div class="nav-row">
+      <div class="search">
+        <input type="search" id="searchMobile" placeholder="Search locations..." aria-label="Search" />
+      </div>
+    </div>
+    <div class="chips" id="chipsMobile">
+      <button class="chip active" data-category="all">All</button>
+      <button class="chip" data-category="Food & Drinks">Food & Drinks</button>
+      <button class="chip" data-category="Malls">Malls</button>
+      <button class="chip" data-category="Spas">Spas</button>
+      <button class="chip" data-category="Shops">Shops</button>
+      
+    </div>
+  </nav>
+
+  <!-- Desktop nav -->
+  <nav class="nav nav-desktop">
+    <div class="nav-row">
+      <button class="btn-icon back" id="backDesktop" aria-label="Back">←</button>
+      <h1 class="brand">YankeeBaku</h1>
+      <div class="search">
+        <input type="search" id="searchDesktop" placeholder="Search locations..." aria-label="Search" />
+      </div>
+      <div class="chips" id="chipsDesktop">
+        <button class="chip active" data-category="all">All</button>
+        <button class="chip" data-category="Food & Drinks">Food & Drinks</button>
+        <button class="chip" data-category="Malls">Malls</button>
+        <button class="chip" data-category="Spas">Spas</button>
+        <button class="chip" data-category="Shops">Shops</button>
+        
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="controls">
+      <p class="count">Showing <span id="countNumber">0</span> <span id="countLabel">locations</span></p>
+      <div class="control-right">
+        <select id="sortSelect" aria-label="Sort locations">
+          <option value="az">Sort A→Z</option>
+          <option value="za">Sort Z→A</option>
+        </select>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid" id="gridBtn" aria-label="Grid view">⊞</button>
+          <button class="view-btn" data-view="list" id="listBtn" aria-label="List view">☰</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="grid" class="grid"></section>
+
+    <section class="about">
+      <h2>About YankeeBaku</h2>
+      <p>Discover American-style spots in Baku: cafes, shops, spas, and attractions with authentic experiences.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-row">
+        <div>
+          <h3>YankeeBaku</h3>
+          <p>Discover American-style spots in Baku</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <p class="copyright">© 2025 YankeeBaku. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <!-- Modal for location details -->
+  <div class="modal" id="modal">
+    <div class="backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <div class="modal-gallery">
+        <div class="gallery-viewport" id="galleryViewport"></div>
+        <button class="gallery-arrow prev" id="prevImg" aria-label="Previous image">←</button>
+        <button class="gallery-arrow next" id="nextImg" aria-label="Next image">→</button>
+        <div class="gallery-dots" id="galleryDots"></div>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modalTitle">Location Title</h2>
+        <p class="modal-meta" id="modalSub">Category</p>
+        <p class="modal-desc" id="modalDesc">Description</p>
+        <div class="modal-actions">
+          <a class="btn btn-primary" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
+          <button class="btn btn-outline" id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Data/locations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

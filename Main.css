@@ -18,7 +18,7 @@ body {
 }
 
 /* ==== NAVBAR ==== */
-/* ==== NAVBAR ==== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -109,8 +109,8 @@ body {
   flex-direction: column;
   cursor: pointer;
   z-index: 200;
-  top: 20px;     /* moves it down from the top */
-  right: 100px;   /* moves it away from the right edge */
+  top: 20px;     
+  right: 100px;   
   z-index: 20;
 }
 
@@ -265,7 +265,6 @@ body {
 }
 
 /* ==== CATEGORIES ==== */
-/* === Categories Section === */
 #categories {
   text-align: center;
   padding: 80px 20px;

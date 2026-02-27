@@ -102,9 +102,9 @@ const locations = [
     desc: "Minimalist specialty coffee shop. Address: 576 Zahid Xəlilov Küçəsi, Bakı",
     link: "https://www.google.com/maps/place/Cuppa+Coffee+Elmler/@40.3829067,49.8110422,1012m/data=!3m1!1e3!4m6!3m5!1s0x40307d0103ffa7ef:0x835fe4a0e39ec1d5!8m2!3d40.3831835!4d49.8109306!16s%2Fg%2F11txfkds6b?entry=ttu",
     photos: [
-      "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e"
+      "/Images/Image12.jpeg",
+      "/Images/Image13.jpeg",
+      "/Images/Image10.jpeg"
     ],
     cat: "Food & Drinks",
     badge: "☕ Cafe"
@@ -116,8 +116,8 @@ const locations = [
     link: "https://www.google.com/maps/place/Tatte+Coffee+Elmler/@40.3829302,49.8109479,859m/data=!3m2!1e3!4b1!4m6!3m5!1s0x40307d7de29faa4f:0x42421d505527f6fd!8m2!3d40.3829302!4d49.8109479!16s%2Fg%2F11trrpyj7j?entry=ttu",
     photos: [
       "/Images/Image6.jpeg",
-      "https://lh3.googleusercontent.com/p/AF1QipNGeskEMwMupLFLbKHHykL0LdT_c8kotcv5mB4l=s680-w680-h510-rw",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+      "/Images/Image3.jpeg",
+      "/Images/Image11.jpeg"
     ],
     cat: "Food & Drinks",
     badge: "🍮 Desserts"
